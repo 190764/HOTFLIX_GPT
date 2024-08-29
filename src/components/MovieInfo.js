@@ -29,7 +29,7 @@ const MovieInfo = () => {
       </div>
     <MovieInfoTop info={info}/>
     <MovieMid id={info?.id} info={info}/>
-    <MovieBottom id={info?.id}/>
+    {/* <MovieBottom id={info?.id}/> */}
     </div>
   );
 };

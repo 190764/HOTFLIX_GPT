@@ -48,22 +48,20 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-black absolute w-full z-50 flex justify-between overflow-hidden items-center lg:px-10 md:px-10 sm:px-8 px-4">
+    <div className="bg-gradient-to-b from-black absolute w-full z-50 flex justify-between overflow-hidden items-center lg:px-10 md:px-10 sm:px-8 px-4 py-2">
       <Link to={"/browse"}>
-        <img
-          className="lg:w-48 sm:w-28 w-20 md:w-40   md:py-6 py-4 lg:py-6"
-          src={Logo}
-          alt="logo"
-        ></img>
+      <h1 className="text-3xl font-extrabold tracking-wide text-white bg-black p-2 rounded-lg shadow-lg">
+  <span className="text-red-600">MOVIES</span> GEMINI
+</h1>
       </Link>
 
       <div className="flex flex-row justify-center items-center">
         {user && (
           <div className="flex justify-center items-center flex-row lg:gap-2 gap-0.5 sm:gap-1">
-            <span className="text-white pr-2 font-normal text-xs md:font-semibold md:text-lg lg:font-semibold lg:text-lg">
+            {/* <span className="text-white pr-2 font-normal text-xs md:font-semibold md:text-lg lg:font-semibold lg:text-lg">
               {lang[langKey].welcome}
               {user.displayName}
-            </span>
+            </span> */}
             {gptview ? (
               <>
                 <button
